@@ -1932,6 +1932,7 @@ span.right {
 .tile_count {
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left:-180px;
 }
 
 .tile_count div:first-child .left {
@@ -1941,6 +1942,7 @@ span.right {
 .tile_count .tile_stats_count {
     border-left: 0px solid #333;
     padding: 0;
+    margin:0 20px 0 20px;
 }
 
 .tile_stats_count .left {
