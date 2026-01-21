@@ -96,6 +96,17 @@
 										<?php } ?>
                                         </select>  
                                     </div>
+									<div class="form-group">
+                                 <select name="book_author" class="select2_single form-control" tabindex="-1" style="width: 150px;">
+                                    <option value="0">Select Author</option>
+                                    <?php
+                                    $result_author = mysqli_query($con, "SELECT DISTINCT author FROM book ORDER BY author ASC") or die (mysqli_error($con));
+                                    while ($row_author = mysqli_fetch_array($result_author)) {
+                                        echo '<option value="' . htmlspecialchars($row_author['author']) . '">' . htmlspecialchars($row_author['author']) . '</option>';
+                                    }
+                                    ?>
+                                </select>  
+                            </div>
 							
 										<button name="submit" type="submit" class="btn btn-primary" style=""><i class="glyphicon glyphicon-log-in"></i> Submit</button>
 								</form>

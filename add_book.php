@@ -1,7 +1,7 @@
 <?php
 // Include necessary files first
 include ('include/dbcon.php');
-include ('header.php');
+
 
 // --- FORM PROCESSING LOGIC ---
 // Check if the form was submitted using the POST method and the 'submit' button was clicked
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             }
 
             // Redirect after successful processing
-            header('location: view_all_barcode.php?loop=' . $n);
+            header('location: book.php');
             exit(); // Always exit after a header redirect
 
         } else {
@@ -77,6 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
         echo "<div class='alert alert-danger'>Error: No image was uploaded or there was an upload error.</div>";
     }
 }
+include ('header.php');
 ?>
 
 <!-- === HTML FORM SECTION === -->
@@ -97,10 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <!-- content starts here -->
-
                 <form method="post" enctype="multipart/form-data" class="form-horizontal form-label-left">
-                    <!-- The unnecessary hidden input has been REMOVED -->
                     
                     <div class="form-group">
                         <label class="control-label col-md-4" for="book_title">Title <span class="required" style="color:red;">*</span></label>
@@ -206,7 +204,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                         </div>
                     </div>
                 </form>
-                <!-- content ends here -->
             </div>
         </div>
     </div>

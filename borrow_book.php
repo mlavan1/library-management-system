@@ -235,7 +235,7 @@
 							$allowable_days_query= mysqli_query($con,"select * from allowed_days order by allowed_days_id DESC ") or die (mysqli_error($con));
 							$allowable_days_row = mysqli_fetch_assoc($allowable_days_query);
 							
-							$timezone = "Asia/Manila";
+							$timezone = "Asia/Colombo";
 							if(function_exists('date_default_timezone_set')) date_default_timezone_set($timezone);
 							$cur_date = date("Y-m-d H:i:s");
 							$date_borrowed = date("Y-m-d H:i:s");
