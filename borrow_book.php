@@ -291,7 +291,7 @@
 									
 									$report_history=mysqli_query($con,"select * from admin where admin_id = $id_session ") or die (mysqli_error($con));
 									$report_history_row=mysqli_fetch_array($report_history);
-									$admin_row=$report_history_row['first_name']." ".$report_history_row['middlename']." ".$report_history_row['lastname'];	
+									$admin_row=$report_history_row['first_name']." ".$report_history_row['last_name'];	
 									
 									mysqli_query($con,"INSERT INTO report 
 									(book_id, user_id, admin_name, detail_action, date_transaction)

@@ -32,13 +32,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-md-4" for="first-name">Middle Name
-                                    </label>
-                                    <div class="col-md-3">
-                                        <input type="text" name="middlename" class="form-control col-md-7 col-xs-12">
-                                    </div> <span style="color:red;">Optional</span>
-                                </div>
-                                <div class="form-group">
                                     <label class="control-label col-md-4" for="last-name">Last Name <span class="required" style="color:red;">*</span>
                                     </label>
                                     <div class="col-md-4">
@@ -114,7 +107,6 @@
                 if (isset($_POST['submit'])){
 				                	$student_id = $_POST['student_id'];
 									$first_name = $_POST['first_name'];
-									// $middlename = $_POST['middlename'];
 									$last_name = $_POST['last_name'];
 									$contact = $_POST['contact'];
 									$gender = $_POST['gender'];

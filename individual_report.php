@@ -35,7 +35,7 @@ include ('header.php');
 										while ($row= mysqli_fetch_array ($result) ){
 										$id=$row['user_id'];
 										?>
-                                            <option value="<?php echo $row['roll_number']; ?>"><?php echo $row['roll_number']; ?> - <?php echo $row['firstname']; ?></option>
+                                            <option value="<?php echo $row['roll_number']; ?>"><?php echo $row['roll_number']; ?> - <?php echo $row['first_name']; ?></option>
 										<?php } ?>
                                         </select>  
 				<br />

@@ -38,8 +38,8 @@
             $_SESSION['id'] = $row['admin_id'];
 
             // Log the user's login activity
-            // $log_stmt = mysqli_prepare($con, "INSERT INTO user_log (firstname, middlename, lastname, admin_type, date_log) VALUES (?, ?, ?, ?, NOW())");
-            // mysqli_stmt_bind_param($log_stmt, "ssss", $row['firstname'], $row['middlename'], $row['lastname'], $row['admin_type']);
+            // $log_stmt = mysqli_prepare($con, "INSERT INTO user_log (first_name, middlename, last_name, admin_type, date_log) VALUES (?, ?, ?, ?, NOW())");
+            // mysqli_stmt_bind_param($log_stmt, "ssss", $row['first_name'], $row['middlename'], $row['last_name'], $row['admin_type']);
             // mysqli_stmt_execute($log_stmt);
             // mysqli_stmt_close($log_stmt);
 

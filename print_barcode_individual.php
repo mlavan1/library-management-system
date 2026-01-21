@@ -88,7 +88,7 @@ if (!empty($code)) {
             if (isset($_SESSION['id'])) {
                 $id_session = $_SESSION['id'];
                 // Use prepared statement here as well for security
-                $stmt_user = mysqli_prepare($con, "SELECT firstname, lastname FROM admin WHERE admin_id = ?");
+                $stmt_user = mysqli_prepare($con, "SELECT first_name, last_name FROM admin WHERE admin_id = ?");
                 mysqli_stmt_bind_param($stmt_user, "i", $id_session);
                 mysqli_stmt_execute($stmt_user);
                 $user_result = mysqli_stmt_get_result($stmt_user);
@@ -97,7 +97,7 @@ if (!empty($code)) {
             ?>
                     <div style="margin-left: 28px;">
                         <span style="font-weight: bold;">Prepared by:</span><br>
-                        <span><?php echo htmlspecialchars($row_user['firstname'] . " " . $row_user['lastname']); ?></span>
+                        <span><?php echo htmlspecialchars($row_user['first_name'] . " " . $row_user['last_name']); ?></span>
                     </div>
             <?php
                 }

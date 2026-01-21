@@ -71,7 +71,7 @@
 							?>
 							<tr>
 				
-								<td><?php echo $row['firstname']." ".$row['middlename']." ".$row['lastname']; ?></td>
+								<td><?php echo $row['first_name']."  ".$row['last_name']; ?></td>
 								<td><?php echo $row['admin_type']; ?></td>
 								<td><?php echo date("M d, Y h:i:s a", strtotime($row['date_log'])); ?></td> 
 							</tr>
