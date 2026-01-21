@@ -20,7 +20,7 @@
         <div class="profile clearfix">
             <div class="profile_pic">
                 <?php if(!empty($row['admin_image'])): ?>
-                    <img src="upload/<?php echo $row['admin_image']; ?>" alt="..." class="img-circle profile_img">
+                    <img src="upload/image.png" alt="..." class="img-circle profile_img">
                 <?php else: ?>
                     <img src="images/user.png" alt="..." class="img-circle profile_img">
                 <?php endif; ?>

@@ -17,9 +17,10 @@
 
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> &nbsp;
                         <?php echo $row['admin_type']; ?>
                         <?php if(!empty($row['admin_image'])): ?>
-                            <img src="upload/<?php echo $row['admin_image']; ?>" alt="">
+                            <!-- <img src="upload/<?php echo $row['admin_image']; ?>" alt=""> -->
                         <?php else: ?>
                             <img src="images/user.png" alt="">
                         <?php endif; ?>

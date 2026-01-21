@@ -132,7 +132,7 @@ $member_type_data_json = json_encode($member_type_data);
 
     <div class="clearfix"></div>
 
-    <div class="row">
+    <div class="row charts">
         <!-- Bar Chart: Books by Category -->
         <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="x_panel">
