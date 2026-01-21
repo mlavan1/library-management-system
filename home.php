@@ -54,7 +54,7 @@ $member_type_data_json = json_encode($member_type_data);
 
 <!-- page content -->
 </br></br>
-<div class="right_col" role="main" style="background-color: #bdeff3ff;">
+<div class="right_col" role="main" style="background-color: #f5f5f5;">
     
     <!-- top tiles -->
     <div class="row tile_count">

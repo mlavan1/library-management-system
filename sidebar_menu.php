@@ -26,7 +26,7 @@
                 <?php endif; ?>
             </div>
             <div class="profile_info">
-                <span>Welcome,</span>
+                <span>Welcome</span>
                 <!-- Using htmlspecialchars to prevent XSS attacks -->
                 <h2><?php echo htmlspecialchars($row['first_name']); ?></h2>
             </div>
@@ -44,7 +44,7 @@
                 <h3>File Information</h3>
                 <div class="separator"></div>
                 <ul class="nav side-menu">
-                    <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="home.php"><i class="fa fa-home"></i> Dashboard</a></li>
                     <li><a href="member.php"><i class="fa fa-users"></i> Members</a></li>
                     
                     <?php if($admin_type == 'admin') { ?>

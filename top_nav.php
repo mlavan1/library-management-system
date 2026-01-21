@@ -13,7 +13,7 @@
                     // No need to query again if this file is included after the sidebar.
                     if (isset($row)) {
                 ?>
-                <li class="nav navbar-nav navbar-left"> <h4 style="font-weight: bold;padding-left: 20px;"><?php echo $row['admin_type']; ?> Dashboard</h4> </li>
+                <li class="nav navbar-nav navbar-left"></li>
 
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

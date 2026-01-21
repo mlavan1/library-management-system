@@ -187,8 +187,7 @@ body.nav-sm .menu_section h3 {
 
 .nav_menu {
     float: left;
-    
-    background: #EDEDED;
+    background: #ffffff;
     border-bottom: 1px solid #D9DEE4;
     margin-bottom: 5px;
     width: 100%;
@@ -213,7 +212,7 @@ body.nav-md .container.body .right_col {
 .nav_title {
     width: 230px;
     float: left;
-    background: #2A3F54;
+    background: #032f5c;
     border-radius: 0;
     height: 57px;
 }
