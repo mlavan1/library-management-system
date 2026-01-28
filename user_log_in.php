@@ -17,7 +17,7 @@
                         <ul class="nav navbar-right panel_toolbox">
                             <li>
 							<a href="user_log_print.php" target="_blank" style="background:none;">
-							<button class="btn btn-danger"><i class="fa fa-print"></i> Print</button>
+							<!-- <button class="btn btn-danger"><i class="fa fa-print"></i> Print</button> -->
 							</a>
 							</li>
                          <li>

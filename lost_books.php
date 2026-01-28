@@ -12,9 +12,9 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
-							<a href="book_print_lost.php" target="_blank" style="background:none;">
+							<!-- <a href="book_print_lost.php" target="_blank" style="background:none;">
 							<button class="btn btn-danger pull-right"><i class="fa fa-print"></i> Print Book List</button>
-							</a>
+							</a> -->
 							
 							<br />
 							<br />

@@ -111,7 +111,7 @@
 								<img src="images/book_image.jpg" class="img-thumbnail" width="75px" height="50px">
 								<?php endif; ?>
 								</td>
-								<td><a target="_blank" href="print_barcode_individual.php?code=<?php echo urlencode($row['book_barcode']); ?>"><?php echo htmlspecialchars($row['book_barcode']); ?></a></td>
+								<td><?php echo htmlspecialchars($row['book_barcode']); ?></td>
 								<td style="word-wrap: break-word; width: 20em;"><?php echo htmlspecialchars($row['book_title']); ?></td>
 								<td style="word-wrap: break-word; width: 15em;"><?php echo htmlspecialchars($row['author']); ?></td>
 								<td><?php echo htmlspecialchars($row['category']); ?></td> 

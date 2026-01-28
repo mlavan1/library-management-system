@@ -17,9 +17,9 @@
                         <h2><i class="fa fa-users"></i> Book Lists</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li>
-							<a href="borrowed_book_search_print.php" target="_blank" style="background:none;">
+							<!-- <a href="borrowed_book_search_print.php" target="_blank" style="background:none;">
 							<button name="print" type="submit" class="btn btn-danger"><i class="fa fa-print"></i> Print</button>
-							</a>
+							</a> -->
 							</li>
                             
                         </ul>
