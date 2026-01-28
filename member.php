@@ -12,9 +12,9 @@
 <div class="row">
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="x_panel">
-			<a href="member_print.php" target="_blank" style="background:none;">
+			<!-- <a href="member_print.php" target="_blank" style="background:none;">
 				<button class="btn btn-danger pull-right"><i class="fa fa-print"></i> Print All Members List</button>
-			</a>
+			</a> -->
 
 			<br />
 			<br />
@@ -38,7 +38,7 @@
 
 						<thead>
 							<tr>
-								<th>Roll number / ID</th>
+								<th>Student number / ID</th>
 								<th>Member Full Name</th>
 								<!--		<th>Gender</th>  -->
 								<th>Member Type</th>

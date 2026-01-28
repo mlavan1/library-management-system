@@ -65,7 +65,7 @@
                         <path d="M12 14h12v8H12v-8zm2 2v4h8v-4h-8zm-2-4h12v2H12v-2zm0 12h12v2H12v-2z" fill="white"/>
                     </svg>
                 </div>
-                <h1>Sign in</h1>
+                <h1>Book Lab Library</h1>
                 <p>Library Management System</p>
             </div>
             

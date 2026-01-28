@@ -12,12 +12,12 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
-							<a href="book_print.php" target="_blank" style="background:none;">
+							<!-- <a href="book_print.php" target="_blank" style="background:none;">
 							<button class="btn btn-danger pull-right"><i class="fa fa-print"></i> Print Books List</button>
 							</a>
 							<a href="print_barcode_book.php" target="_blank" style="background:none;">
 							<button class="btn btn-danger pull-right"><i class="fa fa-print"></i> Print Books Barcode</button>
-							</a>
+							</a> -->
 							<br />
 							<br />
                     <div class="x_title">

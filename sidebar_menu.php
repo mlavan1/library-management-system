@@ -3,7 +3,7 @@
     <div class="left_col scroll-view">
 
         <div class="navbar nav_title" style="border: 0;">
-            <a href="home.php" class="site_title"><i class="fa fa-university"></i> <span>ICBT Library</span></a>
+            <a href="home.php" class="site_title"><i class="fa fa-university"></i> <span>Book Lab</span></a>
         </div>
         <div class="clearfix"></div>
 
@@ -68,15 +68,12 @@
                 <ul class="nav side-menu">
                     <li><a href="borrow.php"><i class="fa fa-edit"></i> Borrow / Return</a></li>
                     <li><a href="report.php"><i class="fa fa-file"></i> Reports</a></li>
-                    <li><a href="individual_report.php"><i class="fa fa-file"></i> Individual Report</a></li>
                     <li><a href="borrowed_book.php"><i class="fa fa-book"></i> Borrowed books</a></li>
                     <li><a href="returned_book.php"><i class="fa fa-book"></i> Returned books</a></li>
 
                     <?php if($admin_type == 'admin') { ?>
                     <li><a href="settings.php"><i class="fa fa-cog"></i> Settings</a></li>
                     <?php } ?>
-
-                    <li><a href="about_us.php"><i class="fa fa-info"></i> About Us</a></li>
                 </ul>
             </div>
         </div>

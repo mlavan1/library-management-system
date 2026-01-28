@@ -35,7 +35,7 @@ $row=mysqli_fetch_array($query);
                        
                     
                                 <div class="form-group">
-                                    <label class="control-label col-md-4" for="first-name">Roll Number | ID<span class="required" style="color:red;">*</span>
+                                    <label class="control-label col-md-4" for="first-name">Student Number | ID<span class="required" style="color:red;">*</span>
                                     </label>
                                     <div class="col-md-4">
                                         <input type="number" value="<?php echo $row['student_id']; ?>" name="student_id" id="first-name2" class="form-control col-md-7 col-xs-12" required="">

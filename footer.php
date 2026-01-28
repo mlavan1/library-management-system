@@ -2,7 +2,7 @@
 	<footer>
 
 					<div class="">
-								<p class="pull-right" align="right">&nbsp;&nbsp;&nbsp;@ Library Management System
+								<p class="pull-right" align="right">&nbsp;&nbsp;&nbsp;@Book_Lab_Library
 								</p>
 					</div>
 							<div class="clearfix"></div>

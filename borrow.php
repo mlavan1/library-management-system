@@ -29,7 +29,7 @@ include ('header.php');
 	
 						<form method="post" action="">
                                         <select name="student_id" class="select2_single form-control" required="required" tabindex="-1" >
-										<option value="0">Select Roll Number</option>
+										<option value="0">Select Student Number</option>
 										<?php
 										$result= mysqli_query($con,"select * from user") or die (mysqli_error($con));
 										while ($row= mysqli_fetch_array ($result) ){
