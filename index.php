@@ -16,9 +16,6 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        echo $username;
-        echo $password;
-
         // Use PREPARED STATEMENTS for security to prevent SQL Injection
         $stmt = mysqli_prepare($con, "SELECT admin_id, first_name, last_name, admin_type, password FROM admin WHERE username = ?");
         mysqli_stmt_bind_param($stmt, "s", $username);
@@ -26,10 +23,6 @@
         $result = mysqli_stmt_get_result($stmt);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         mysqli_stmt_close($stmt);
-
-        echo "\ntest";
-        echo $row['password'];
-        
 
         // Verify the user exists and the password is correct
         // Note: This project uses plaintext passwords. In a real-world scenario, you should use password_hash() and password_verify().
@@ -44,7 +37,7 @@
             // mysqli_stmt_close($log_stmt);
 
             // Redirect to the home page
-            echo "test";
+            
             header("location: home.php");
             exit();
         } else {
@@ -59,7 +52,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Banking Login</title>
+    <title>LMS Login</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>

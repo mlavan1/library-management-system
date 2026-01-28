@@ -1,5 +1,4 @@
-// Clean Banking Login Form JavaScript
-class CleanBankingLoginForm {
+class LibraryManagementSystem {
     constructor() {
         this.form = document.getElementById('loginForm');
         this.emailInput = document.getElementById('email');
@@ -144,5 +143,5 @@ class CleanBankingLoginForm {
 
 // Initialize the form when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new CleanBankingLoginForm();
+    new LibraryManagementSystem();
 });
