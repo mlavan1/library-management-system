@@ -128,8 +128,8 @@
                     $email      = $_POST['email'];
                     $password   = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-                    $regex_num = "/^[6789][0-9]{9}$/";
-
+                    // $regex_num = "/^[6789][0-9]{9}$/";
+                    $regex_num = "/^[0-9]{10}$/";
 
 
                     $result = mysqli_query($con, "select * from user WHERE user_id='$student_id' OR contact='$contact'") or die(mysqli_error($con));

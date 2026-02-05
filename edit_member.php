@@ -133,7 +133,8 @@ $address = $_POST['address'];
 $type = $_POST['type'];
 $branch = $_POST['branch'];
 
- $regex_num = "/^[6789][0-9]{9}$/";
+//  $regex_num = "/^[6789][0-9]{9}$/";
+    $regex_num = "/^[0-9]{10}$/";
  if (!preg_match($regex_num, $contact)) {
                         echo "<script>alert('Not a valid contact number'); window.location='member.php'</script>";
 }

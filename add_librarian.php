@@ -40,7 +40,7 @@
                                     <label class="control-label col-md-4" for="first-name">NIC
                                     </label>
                                     <div class="col-md-3">
-                                        <input type="text" name="adhaar_id" placeholder="" id="first-name2" class="form-control col-md-7 col-xs-12" maxlength="12">
+                                        <input type="text" name="nic" placeholder="" id="first-name2" class="form-control col-md-7 col-xs-12" maxlength="12">
                                     </div><span style="color:red;">Optional</span>
                                 </div>
                                 <div class="form-group">
@@ -54,7 +54,7 @@
                                     <label class="control-label col-md-4" for="first-name">Contact<span class="required" style="color:red;">*</span>
                                     </label>
                                     <div class="col-md-3">
-                                        <input type="text" name="contact" placeholder="" id="first-name2" class="form-control col-md-7 col-xs-12" required="" pattern="[789][0-9]{9}$" maxlength="10">
+                                        <input type="text" name="contact" placeholder="" id="first-name2" class="form-control col-md-7 col-xs-12" required="" pattern="[0-9]{10}" maxlength="10">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -118,7 +118,7 @@
 									$profile=$_FILES["image"]["name"];
 									$first_name = $_POST['first_name'];
 									$last_name = $_POST['last_name'];
-                                    $adhaar_id = $_POST['adhaar_id'];
+                                    $nic = $_POST['nic'];
                                     $email_id = $_POST['email_id'];
                                     $contact = $_POST['contact'];
 									$username = $_POST['username'];
@@ -137,8 +137,8 @@
 					echo "<script>alert('Password do not match!'); window.location='add_librarian.php'</script>";
 					}else
 					{		
-						mysqli_query($con,"insert into admin (first_name, last_name,nic,email_id,contact , username, password, confirm_password, admin_image, admin_added)
-						values ('$first_name', '$last_name','$adhaar_id','$email_id','$contact', '$username', '$password', '$confirm_password', '$profile',NOW())")or die(mysqli_error($con));
+						mysqli_query($con,"insert into admin (first_name, last_name,nic,email_id,contact , username, password, confirm_password, admin_image, admin_type,admin_added)
+						values ('$first_name', '$last_name','$nic','$email_id','$contact', '$username', '$password', '$confirm_password', '$profile','librarian',NOW())")or die(mysqli_error($con));
 						echo "<script>alert('Account successfully added!'); window.location='admin.php'</script>";
 					}
 									}

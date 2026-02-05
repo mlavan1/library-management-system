@@ -84,7 +84,7 @@
 							while ($row= mysqli_fetch_array ($result) ){
                             $id=$row['report_id'];
                             $book_id=$row['book_id'];
-                            $user_name=$row['firstname']." ".$row['middlename']." ".$row['lastname'];
+                            $user_name=$row['first_name']." ".$row['last_name'];
                             
                             ?>
                             <tr>
